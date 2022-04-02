@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Dancing+Script:wght@700&family=Fredoka&family=Lato:ital@1&family=Mulish&family=Open+Sans:ital@1&family=Oswald&family=Permanent+Marker&family=Press+Start+2P&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  /* height: auto; */
+  background-color: rgb(245, 246, 248);
+  overflow-x: hidden;
+}
+.home {
+  min-height: 100vh;
+  background: url(https://images.unsplash.com/photo-1634712282287-14ed57b9cc89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.nav {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-top: 10px;
+}
+.navs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: 800;
+  color: rgb(104, 73, 15);
+}
+
+ul li a:hover {
+  color: rgb(24, 23, 23);
+}
+
+.heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+}
+.social {
+  width: 20%;
+  display: flex;
+}
+.social span {
+  padding: 0 10px;
+}
+.fa {
+  font-size: 1.4rem;
+}
+.fa {
+  color: royalblue;
+}
+.fa1 {
+  color: rgb(167, 10, 36);
+}
+.fa2 {
+  color: rgb(7, 37, 124);
+}
+.name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  position: relative;
+  gap: 2rem;
+}
+.shop {
+  font-size: 2rem;
+  padding-top: 10px;
+}
+.count {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  font-size: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(197, 107, 107);
+  border-radius: 50%;
+  text-align: center;
+}
+.headline {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  font-family: "Permanent Marker", cursive;
+}
+.first-heading {
+  font-size: 2.7vw;
+  color: white;
+}
+.sec-heading {
+  font-size: 1.9vw;
+  color: rgb(167, 10, 36);
+}
+.shop-now {
+  width: auto;
+  padding: 5px;
+  height: 40px;
+  background: transparent;
+  margin: 20px 150px;
+  border: 2px solid rgb(167, 10, 36);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(167, 10, 36);
+  cursor: pointer;
+}
+.shops{
+  cursor: pointer;
+
+}
+
+.shop-now:hover {
+  background-color: white;
+}
+.featured {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: rgb(167, 10, 36);
+  font-weight: bolder;
+}
+
+.featured-heading {
+  font-size: 2rem;
+}
+
+.see-products {
+  margin: 40px 0 100px 0;
+  width: 180px;
+  height: 40px;
+  color: white;
+  background-color: rgb(182, 67, 21);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.s-products {
+  color: white;
+}
+.price {
+  color: rgb(233, 126, 87);
+}
+.see-products:hover {
+  color: rgb(167, 10, 36);
+  background-color: azure;
+}
+.s-products:hover {
+  color: rgb(167, 10, 36);
+}
+.addtocart {
+  width: 114px;
+  height: 28px;
+  color: rgb(35, 32, 37);
+  background-color: rgb(233, 126, 87);
+  position: absolute;
+  top: 72%;
+  left: 100%;
+  padding-top: 4px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.addtocart:hover {
+  color: rgb(223, 234, 235);
+}
+.img:hover .addtocart {
+  left: 66%;
+}
+.product {
+  width: 100vw;
+  min-height: 1050px;
+}
+.product-box {
+  width: 95vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 50px;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 20% 75%;
+  grid-gap: 2rem;
+}
+.box-left {
+  /* border: 2px solid red; */
+  height: 100vh;
+  padding-left: 33px;
+  display: block;
+}
+.box-right {
+  /* border: 2px solid black; */
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.search-product {
+  width: 126px;
+  height: 28px;
+  margin-bottom: 2rem;
+  background-color: rgb(222, 237, 245);
+}
+.company {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.cat-products {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.cat-products li {
+  cursor: pointer;
+}
+
+.cat-products li:hover {
+  color: rgb(165, 161, 161);
+}
+.main-box {
+  width: 287px;
+  height: 200px;
+  margin: 1rem;
+}
+.img-box {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.des {
+  margin: auto;
+  text-align: center;
+}
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.addcart {
+  width: 120px;
+  height: 20px;
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  background-color: rgb(247, 179, 54);
+  color: white;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-radius: 5px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.img-box:hover .addcart {
+  left: 65%;
+}
+.addcart:hover {
+  color: black;
+}
+.about {
+  width: 90vw;
+  margin: 1rem;
+  min-height: 600px;
+  /* border: 2px solid red; */
+}
+.about-heading {
+  font-family: "Roboto", sans-serif;
+  color: rgb(167, 10, 36);
+  text-align: center;
+  font-size: 30px;
+}
+.box-1 {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.box-2 {
+  width: 45%;
+  text-align: center;
+  border: 1px solid rgb(233, 224, 224);
+}
+.btn-box {
+  width: 100%;
+}
+.btn-box .btn {
+  width: 32%;
+  color: rgb(233, 99, 10);
+  height: 48px;
+  font-size: 25px;
+  padding-right: 0px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: bolder;
+}
+
+.text-box1 {
+  display: none;
+}
+.text-1 {
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 10px 0;
+}
+.act {
+  background-color: rgb(194, 190, 190);
+}
+.active {
+  display: block;
+}
+.about-box {
+  display: flex;
+  gap: 1rem;
+  padding: 0 20px;
+  margin-top: 2rem;
+}
+.bar{
+    padding-top: 4px;
+    font-size: 23px;
+    display: none;
+}
+.close{
+    font-size: 25px;
+    display: none;
+
+}
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  transition: var(--mainTransition);
+  background-color: white;
+  z-index: 2;
+visibility: hidden;
+scroll-behavior: smooth;
+margin-bottom: 20px;
+}
+.cart-close{
+  font-size: 32px;
+  margin: 5%;
+  cursor: pointer;
+}
+.showcart{
+  visibility: visible;
+}
+.removeitem{
+  display: none;
+}
+.cart-mean{
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.cart-pic{
+  width: 15vw;
+  height: 15vh;
+  border-radius: 8px;
+}
+.cart-pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+}
+.product-name{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #aab9eb;
+  margin-bottom: 27px;
+  text-transform: capitalize;
+}
+.product-price{
+  margin-top: 10px;
+  font-size: 25px;
+}
+.remove{
+  color: rgb(86, 76, 95);
+  margin-top: 10px;
+}
+.total{
+  text-align: center;
+  color: rgb(160, 160, 218);
+}
+.check{
+  width: 10vw;
+  height: 5vh;
+  position: absolute;
+  left: 35%;
+  margin-top: 31px;
+  font-size: 1.6vw;
+  background-color: rgb(160, 160, 218);
+  color: white;
+  cursor: pointer;
+  
+}
+.inactive{
+  pointer-events: none;
+  background-color: rgb(184, 189, 218);
+}
+@media only screen and (min-width: 700px){
+.cart-overlay{
+ width: 30%;
+ height: 100vh;
+
+}
+}
+
+@media only screen and (max-width: 1100px) {
+  .product {
+    min-height: 1500px;
+  }
+  .shop-now{
+      font-size: 15px;
+      width: 100px;
+  }
+  .about-box{
+      flex-direction: column;
+      gap: 1rem;
+  }
+  .pic-box img{
+      width: 100%;
+  }
+  .about{
+      margin-bottom: 5rem;
+  }
+  
+}
+@media only screen and (max-width: 920px){
+    .bar{
+        display: block;
+    }
+    .navs{
+        /* right: 3rem; */
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    width: 90vw;
+    margin: auto;
+    background-color: white;
+    height: 72vh;
+    z-index: 100;
+    transform: translateX(-112%);
+    transition: 0.5s;
+    /* margin: auto; */
+    }
+    .navs ul{
+        flex-direction: column;
+        position: absolute;
+        gap: 2rem;
+        bottom: 17rem;
+    }
+   
+    .social{
+        display: flex;
+        position: absolute;
+        bottom: 30%;
+        left: 40%;
+    }
+    .close{
+        font-size:25px ;
+        color: black;
+        position: absolute;
+        top: 6%;
+        left: 91%;
+        display: block;
+    }
+    .open{
+        transform: translateX(0);
+        
+    }
+    .product-box{
+        display: flex;
+    flex-direction: column;
+    }
+   .centre{
+    display: flex;
+    justify-content: space-around;
+   }
+   .box-left ul{
+    flex-direction: row;
+    margin: auto;
+   }
+   .box-right{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   }
+   .about {
+    margin: 12rem 2rem;
+}
+
+}
+@media only screen and (max-width: 860px){
+  .headline{
+    top: 40%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 660px){
+  .headline{
+    top: 34%;
+    left: 34%;
+  }
+  .shop-now{
+    margin: 20px 68px;
+  }
+  .main-box{
+    width: 90vw;
+    height: 300px;
+  }
+  .product{
+    height: 252rem;
+  }
+  .social{
+    left: 40%;
+  }
+  .name{
+    position: absolute;
+    left: 65%;
+    top: 1px;
+  }
+  .bar{
+    padding-top: 23px;
+  }
+  .home{
+    min-height: 55vh;
+  }
+  .classchange{
+    height: 100vh;
+  }
+  .cart-pic{
+      width: 40vw;
+      height: 15vh; 
+  }
+  .check{
+    width: 150px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 460px){
+ .box-left ul{
+  margin-right: 135px;
+ }
+  .shop-now{
+    margin: 20px 25px
+  }
+  .home{
+    min-height: 44vh;
+  }
+  .btn-box .btn{
+    font-size: 21px;
+  }
+  
+}
